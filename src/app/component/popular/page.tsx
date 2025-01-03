@@ -5,20 +5,19 @@ export default function Product(){
         <div className="w-full h-23rem p-28 mt-16">
 
      
-    <h1 className="flex justify-start text-3xl ">
+    <h1 className="flex justify-start text-3xl">
        Most Popular Product
     </h1>
-    <div className="flex flex-row justify-center items-center  gap-[23px] mt-16">
+    <div className="flex flex-col xl:flex-row justify-center items-center gap-[23px] mt-16">
 
 
-    <div className="w-[43rem]">
-         <img src="/image3.jpg" alt=""  />
+    <div className="w-[43rem] hidden lg:block"> {/* Hide on small screens and show on large screens */}
+         <img src="/sofa.jpeg" alt="" />
       
             <h3 className="text-2xl my-3 text-[#2a254b] font-light">The Dandy chair</h3>
             <h4 className="font-medium">&pound; 250</h4>
         
     </div>  
-    
     
     
     <div className="w-[19rem]">
@@ -28,7 +27,7 @@ export default function Product(){
             <h4 className="font-medium">&pound; 250</h4>
         
     </div>  
-    
+   
     <div className="w-[19rem]">
          <img src="/image1.jpg" alt="" />
       

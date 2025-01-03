@@ -2,17 +2,17 @@ export default function Product(){
     return(
     <div>
 
-        <div className="w-full h-23rem p-28 mt-16">
+        <div className="w-full h-23rem p-10 xl:p-28 mt-16">
 
      
     <h1 className="flex justify-start text-3xl ">
         New ceramics
     </h1>
-    <div className="w-8/16 grid grid-cols-4 gap-[23px] mt-16">
+    <div className="w-full grid grid-cols-2 xl:grid-cols-4 gap-[23px] mt-16">
 
 
     <div>
-         <img src="/image1.jpg" alt="" />
+         <img src="/image2.jpg" alt="" />
       
             <h3 className="text-2xl my-3 text-[#2a254b] font-light">The Dandy chair</h3>
             <h4 className="font-medium">&pound; 250</h4>
@@ -30,14 +30,14 @@ export default function Product(){
     </div>  
     
     <div>
-         <img src="/image1.jpg" alt="" />
+         <img src="/223.jpeg" alt="" />
       
             <h3 className="text-2xl my-3 text-[#2a254b] font-light">The Dandy chair</h3>
             <h4 className="font-medium">&pound; 250</h4>
         
     </div>
      <div>
-         <img src="/image1.jpg" alt="" />
+         <img src="/123.jpeg" alt="" />
       
             <h3 className="text-2xl my-3 text-[#2a254b] font-light">The Dandy chair</h3>
             <h4 className="font-medium">&pound; 250</h4>

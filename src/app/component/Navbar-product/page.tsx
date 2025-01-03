@@ -1,3 +1,4 @@
+
 "use client"
 
 import Link  from "next/link";
@@ -15,42 +16,31 @@ const [isClick , setisClick] = useState(false)
 const toggleNavbar= (): void =>{
   setisClick(!isClick)
 }
-    return (
-      
 
-      
-      <div className="max-w-screen-2xl mx-auto">
-        {/* Header */}
-        <div className="flex flex-row items-center h-16 px-5 border-b-2 justify-between">
-          {/* Logo */}
-          <div>icon</div>
-          <div className=" text-xl text-[#2a254b] items-center justify-center">Avion</div>
+
+    return (
+     <div className="wrapper">
+        <nav className="flex h-16 w-full border-b-2"  >
+        <div className="text-xl text-[#2a254b] m-5">Avion</div>
   
-          {/* Icons for Desktop */}
-          
-  
-          {/* Icons for Mobile */}
-          <div className="flex  flex-row items-center justfy-end gap-4">
-            <div>Search Icon</div>
-            <div className=" hidden md:block">Profie Icon</div>
-            <div className="block md:hidden" onClick={toggleNavbar} ><FontAwesomeIcon icon={faBars} className="text-3xl"/></div>
-          </div>
-        </div>
-  
-        {/* Navigation */}
-        <nav className="flex flex-row justify-center items-center py-5 h-16">
-          <ul className="hidden  md:flex flex-wrap  items-center gap-[50px] text-center ">
-            <li>Home</li>
-            <Link href={"/product-listing"}><li>Ceramics</li></Link>
-           <Link href={"/aboutus"}> <li>Chairs</li></Link>
-            <Link href={"/cart-item"}> <li>Crockery</li></Link>
-            <Link href={"/All"}> <li>Tableware</li></Link>
-            
-          
-            <li>Cutlery</li>
-          </ul>
+            <ul className="flex flex-row justify-center items-center w-[100%] gap-[40px] m">
+                <li>Plant pots</li>
+                <li>Ceramics</li>
+                <li>Tables</li>
+                <li>Chairs</li>
+                <li>Crockery</li>
+                <li>Tableware</li>
+                <li>Cutlery</li>
+            </ul>
+
+            <div className="flex flex-row justify-end items-center gap-5 p-4">
+     
+                <div>Icons</div>
+                <div>Icons</div>
+                <div>Icons</div>
+            </div>
         </nav>
-        
+
         {isClick &&(
            <motion.div
            className="fixed inset-0 bg-black h-[23rem] w-full bg-opacity-75 z-50"
@@ -86,8 +76,7 @@ const toggleNavbar= (): void =>{
        </motion.div>
           
         )}
-      </div>
-       
+     </div>
 
     );
   }
