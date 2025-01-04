@@ -61,7 +61,7 @@ export default function Footer() {
                 placeholder="your@email.com"
                 className="flex-1 bg-[#4a4666] border-none py-2 px-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400"
               />
-              <button className="bg-white hover:bg-blue-600 text-black py-2 px-4">Sign up</button>
+              <button className="bg-white hover:bg-blue-600 text-black py-2 px-3">Sign up</button>
             </div>
           </div>
         <div className="w-[90%] mx-auto flex justify-center  items-center border-t-2 border-t-purple-100  mt-8 gap-4 xl:mx-16 w-[90%]">
