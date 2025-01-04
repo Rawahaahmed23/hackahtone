@@ -55,7 +55,7 @@ export default function Footer() {
 
         <div className="w-full flex flex-col justify-center items-center lg:hidden block w-full ">
             <h4 className="text-lg font-bold mb-4">Join our mailing list</h4>
-            <div className="flex w-[242px] h-[56px]">
+            <div className="flex w-[222px] h-[56px]">
               <input
                 type="email"
                 placeholder="your@email.com"
