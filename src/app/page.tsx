@@ -11,7 +11,7 @@ import Signup from "./component/siginup/page"
 import Footer from "./component/footer/page";
 import Last from "./component/last/page"
 
-import { div } from 'framer-motion/client';
+
 
 export default function Home() {
 
