@@ -9,7 +9,7 @@ import { motion } from "framer-motion"; // Import Framer Motion
 import { useState } from "react";
 
 
-export default function () {
+export default function Navbar() {
 
 const [isClick , setisClick] = useState(false)
 

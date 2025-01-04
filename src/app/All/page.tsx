@@ -1,6 +1,6 @@
-import Link from "next/link";
+
 import React from "react";
-import Navbar1 from "../component/Navbar/page"
+
 import Allproduct from "../component/Allproduct/page"
 import  Footer from "../component/footer/page"
 

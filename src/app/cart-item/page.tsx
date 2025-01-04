@@ -1,4 +1,4 @@
-import Navbar from "../component/Navbar/page"
+
 import Footer from "../component/footer/page"
 
 export default function ShoppingCart() {

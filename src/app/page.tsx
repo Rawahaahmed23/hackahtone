@@ -1,16 +1,16 @@
-import { config } from '@fortawesome/fontawesome-svg-core';
+
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import Image from "next/image";
+
 import Service from "./component/Service/page";
 import Product from "./component/product/page";
 import Popular from "./component/popular/page"
 import Signup from "./component/siginup/page"
-import Navbar from "./component/Navbar/page"
 
-import Link from "next/link";
+
+
 import Footer from "./component/footer/page";
 import Last from "./component/last/page"
-import { Sign } from "crypto";
+
 import { div } from 'framer-motion/client';
 
 export default function Home() {

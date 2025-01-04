@@ -1,4 +1,4 @@
-import Navbar2 from "../component/Navbar-about/page"
+
 import Last from "../component/last-about/page"
 import Service3 from "../component/Service/page"
 import Sigin3 from "../component/siginup/page"
