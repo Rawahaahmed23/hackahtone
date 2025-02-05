@@ -3,6 +3,7 @@ import Product1 from "../component/product/page"
 import Service1 from "../component/Service/page"
 import Signup1 from "../component/siginup/page"
 import Footer1 from "../component/footer-product/page"
+import Link from "next/link"
 
 export default function Product() {
   return (
@@ -111,17 +112,17 @@ export default function Product() {
         </div>
 
        <div className="hidden lg:flex flex-row justify-end items-end w-full">
-        <button className="w-[143px] h-[56px] bg-[#2A254B] text-[16px] text-white">
+        <Link href={'/cart-item'}><button className="w-[143px] h-[56px] bg-[#2A254B] text-[16px] text-white">
         Add to Cart
-        </button>
+        </button></Link>
        </div>
 
      </div>
-     <div className="flex flex-row justify-center items-center w-full lg:hidden">
+    <Link href={'/cart-item'}> <div className="flex flex-row justify-center items-center w-full lg:hidden">
         <button className="w-full h-[56px] bg-[#2A254B] text-[16px] text-white">
         Add to Cart
         </button>
-       </div>
+       </div></Link>
 
         </div>    {/* dimension-section end  */}
 

@@ -1,3 +1,7 @@
+import { TbTruckDelivery } from "react-icons/tb";
+import { GoVerified } from "react-icons/go";
+import { CiCreditCard1 } from "react-icons/ci";
+import { PiPlant } from "react-icons/pi";
 export default function service() {
     return (
         <div >
@@ -10,7 +14,7 @@ export default function service() {
                 <div className="flex flex-col lg:flex-row justify-center items-center mt-16 gap-[14px] w-full">
 
                     <div className="w-[305px] h-[244px] bg-[#F9F9F9] p-10">
-                        <div> icons</div>
+                        <div> <TbTruckDelivery size={20} color="2a254b"/></div>
                         <h3 className="py-3  text-[#2a254b] font-semibold">
                         Next day as standard</h3>
 
@@ -21,7 +25,7 @@ export default function service() {
 
 
                     <div className="w-[305px] h-[244px] bg-[#F9F9F9] p-10">
-                        <div> icons</div>
+                        <div> <GoVerified size={20} color="2a254b"/></div>
                         <h3 className="py-3  text-[#2a254b] font-semibold">
                         Made by true artisans</h3>
 
@@ -31,7 +35,7 @@ export default function service() {
                     
                     
                     <div className="w-[305px] h-[244px] bg-[#F9F9F9] p-10">
-                        <div> icons</div>
+                        <div><CiCreditCard1 size={30} color="2a254b"/></div>
                         <h3 className="py-3  text-[#2a254b] font-semibold">
                         Unbeatable prices</h3>
 
@@ -39,7 +43,7 @@ export default function service() {
                     </div> 
                     
                     <div className="w-[305px] h-[244px] bg-[#F9F9F9] p-10">
-                        <div> icons</div>
+                        <div className="font-4xl"><PiPlant size={30} color="2a254b"/></div>
                         <h3 className="py-3  text-[#2a254b] font-semibold">
                         Recycled packaging</h3>
 

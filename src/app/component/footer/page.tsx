@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+
 export default function Footer() {
     return (
       <footer className="bg-[#2a254b] text-white py-8 border-b-2px md:mt-0 sm:mt-0  xl:mt-16 ">
@@ -26,7 +29,7 @@ export default function Footer() {
           <div className="w-full lg:w-1/4 mb-4 md:mb-0">
             <h4 className="text-lg font-bold mb-4">Our company</h4>
             <ul className="list-none">
-              <li><a href="#" className="hover:text-gray-400">About us</a></li>
+             <Link href={'/aboutis'}> <li className="hover:text-gray-400">About us</li></Link>
               <li><a href="#" className="hover:text-gray-400">Vacancies</a></li>
               <li><a href="#" className="hover:text-gray-400">Contact us</a></li>
               <li><a href="#" className="hover:text-gray-400">Privacy</a></li>

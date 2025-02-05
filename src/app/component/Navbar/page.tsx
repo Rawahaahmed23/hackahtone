@@ -4,9 +4,12 @@ import Link  from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faBurger } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion"; // Import Framer Motion
-
+import { BsCart2 } from "react-icons/bs";
 import { useState } from "react";
+import { IoSearch } from "react-icons/io5";
 
+
+import { CgProfile } from "react-icons/cg";
 
 export default function Navbar() {
 
@@ -23,7 +26,7 @@ const toggleNavbar= (): void =>{
         {/* Header */}
         <div className="flex flex-row items-center h-16 px-5 border-b-2 justify-between">
           {/* Logo */}
-          <div>icon</div>
+          <div><IoSearch /></div>
           <div className=" text-xl text-[#2a254b] items-center justify-center">Avion</div>
   
           {/* Icons for Desktop */}
@@ -31,8 +34,8 @@ const toggleNavbar= (): void =>{
   
           {/* Icons for Mobile */}
           <div className="flex  flex-row items-center justfy-end gap-4">
-            <div>Search Icon</div>
-            <div className=" hidden md:block">Profie Icon</div>
+            <Link href={'/cart-item'}><div><BsCart2 /></div></Link>
+           <Link href={'/aboutus'}> <div className=" hidden md:block"><CgProfile /></div></Link>
             <div className="block md:hidden" onClick={toggleNavbar} ><FontAwesomeIcon icon={faBars} className="text-3xl"/></div>
           </div>
         </div>
